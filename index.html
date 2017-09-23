@@ -61,6 +61,9 @@ text-indent: 20px;
 #img {
 transition: all 1s;
 }
+#img:hover {
+cursor: pointer;
+}
 </style>
 <title>Jordan XC</title>
 </head>
@@ -104,11 +107,13 @@ function enlarge() {
 document.getElementById('img').style.transform = "scale(2.0)";
 document.getElementById('img').style.paddingRight = "200px";
 document.getElementById('img').style.paddingBottom = "100px";
+document.getElementById('img').style.cursor = "auto";
 }
 function other() {
 document.getElementById('img').style.transform = "scale(1.0)";
 document.getElementById('img').style.paddingRight = "0px";
 document.getElementById('img').style.paddingBottom = "0px";
+document.getElementById('img').style.cursor = "pointer";
 }
 </script>
 </body>
