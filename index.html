@@ -58,12 +58,15 @@ margin-left: 20px;
 #videos h3 {
 text-indent: 20px;
 }
+#img {
+transition: all 1s;
+}
 </style>
 <title>Jordan XC</title>
 </head>
 <body>
-<h1 id="title" class="boxes">Jordan Cross Country</h1>
-<div id="past" class="boxes">
+<h1 onclick="other()" id="title" class="boxes">Jordan Cross Country</h1>
+<div onclick="other()" id="past" class="boxes">
 <a style="text-decoration: none;" href="results.html">
 <h1>Results</h1>
 </a>
@@ -77,7 +80,7 @@ text-indent: 20px;
 <br><br>
 <a id="link" href="results.html">Click Here For Individual Results</a>
 </div>
-<div id="upcoming" class="boxes">
+<div onclick="other()" id="upcoming" class="boxes">
 <h1>Upcoming</h1>
 <h2>Race:</h2>
 <h3>JLS/Mitchell Park Meet<br>
@@ -94,7 +97,19 @@ Saturday (optional) - Hills at the Dish
 <div id="videos" class="boxes">
 <h1>Photos and Videos</h1>
 <h3>Saturday Baylands Practice</h3>
-<center><img src="one.jpg"></center>
+<center><img id="img" onclick="enlarge()" src="one.jpg"></center>
 </div>
+<script>
+function enlarge() {
+document.getElementById('img').style.transform = "scale(2.0)";
+document.getElementById('img').style.paddingRight = "200px";
+document.getElementById('img').style.paddingBottom = "100px";
+}
+function other() {
+document.getElementById('img').style.transform = "scale(1.0)";
+document.getElementById('img').style.paddingRight = "0px";
+document.getElementById('img').style.paddingBottom = "0px";
+}
+</script>
 </body>
 </html>
