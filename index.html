@@ -29,7 +29,7 @@ border-style: solid;
 }
 #past, #upcoming, #videos {
 width: 340px;
-height: 400px;
+height: 500px;
 float: left;
 }
 #past h1 {
@@ -51,8 +51,9 @@ text-indent: 20px;
 #past li {
 font-size: 20px;
 }
-#link {
+.link {
 font-size: 20px;
+margin-left: 20px;
 }
 #upcoming h2, #upcoming h3 {
 margin-left: 20px;
@@ -82,8 +83,9 @@ cursor: pointer;
 <li>7th Grade Boys: 1st/6 teams</li>
 <li>6th Grade Boys: 3rd/7 teams</li>
 <li>6th Grade Girls: 2nd/6 teams</li>
-<br><br>
-<a id="link" href="results.html">Click Here For Individual Results</a>
+<br></ul>
+<a class="link" href="results.html">Click Here For Individual Results</a>
+<h3 class="link">Also click the link above to know if you are in the A, B, or C race for the JLS meet</h3>
 </div>
 <div onclick="other()" id="upcoming" class="boxes">
 <h1>Upcoming</h1>
@@ -98,11 +100,19 @@ Wednesday - Race <br>
 Thursday - Long Run<br>
 Friday - No Practice <br>
 Saturday (optional) - Hills at the Dish
+<h2>News</h2>
+<a class="link" href="https://www.youtube.com/watch?v=rA24Ua-uWns">
+New Jordan XC warm-up video</a>
 </div>
 <div id="videos" class="boxes">
+<a style="text-decoration: none;" href="photo.html">
 <h1>Photos and Videos</h1>
+</a>
 <h3>Saturday Baylands Practice</h3>
-<center><img id="img" onclick="enlarge()" src="one.jpg"></center>
+<center><img id="img" onclick="enlarge()" src="one.jpg"></center><br>
+<a class="link" href="photo.html">More photos and videos</a><br>
+<h3>Send pictures to <a class="link" href="mailto:cwvroemen@gmail.com">
+cwvroemen@gmail.com</a></h3>
 </div>
 <script>
 function enlarge() {
